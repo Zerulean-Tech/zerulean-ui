@@ -1,0 +1,309 @@
+.zerulean-gradient {
+  background: linear-gradient(90deg, #00aaff 0%, #19b8e6 100%);
+  color: #fff !important;
+  border: none;
+  box-shadow: 0 2px 8px 0 rgba(0, 119, 182, 0.15);
+  transition: background 0.2s;
+  text-transform: none !important;
+
+  &:hover,
+  &:focus {
+    background: linear-gradient(90deg, #19b8e6 0%, #00aaff 100%);
+  }
+
+  // If MUI error color is present, override to red theme for contained variant
+  &.Mui-error,
+  &.MuiButton-colorError {
+    background: linear-gradient(90deg, #d32f2f 0%, #b71c1c 100%) !important;
+    color: #fff !important;
+    border: none;
+    box-shadow: 0 2px 8px 0 rgba(211, 47, 47, 0.15);
+
+    &:hover,
+    &:focus {
+      background: linear-gradient(90deg, #b71c1c 0%, #d32f2f 100%) !important;
+    }
+  }
+
+  // Success (green)
+  &.Mui-success,
+  &.MuiButton-colorSuccess {
+    background: linear-gradient(90deg, #2e7d32 0%, #43a047 100%) !important;
+    color: #fff !important;
+    border: none;
+    box-shadow: 0 2px 8px 0 rgba(46, 125, 50, 0.15);
+
+    &:hover,
+    &:focus {
+      background: linear-gradient(90deg, #43a047 0%, #2e7d32 100%) !important;
+    }
+  }
+
+  // Info (blue)
+  &.Mui-info,
+  &.MuiButton-colorInfo {
+    background: linear-gradient(90deg, #0288d1 0%, #26c6da 100%) !important;
+    color: #fff !important;
+    border: none;
+    box-shadow: 0 2px 8px 0 rgba(2, 136, 209, 0.15);
+
+    &:hover,
+    &:focus {
+      background: linear-gradient(90deg, #26c6da 0%, #0288d1 100%) !important;
+    }
+  }
+
+  // Warning (amber)
+  &.Mui-warning,
+  &.MuiButton-colorWarning {
+    background: linear-gradient(90deg, #ed6c02 0%, #ffa000 100%) !important;
+    color: #fff !important;
+    border: none;
+    box-shadow: 0 2px 8px 0 rgba(237, 108, 2, 0.15);
+
+    &:hover,
+    &:focus {
+      background: linear-gradient(90deg, #ffa000 0%, #ed6c02 100%) !important;
+    }
+  }
+
+  // Disabled (gray)
+  &.Mui-disabled {
+    background: linear-gradient(90deg, #e0e0e0 0%, #bdbdbd 100%) !important;
+    color: #757575 !important;
+    border: none;
+    box-shadow: none;
+    cursor: not-allowed;
+    opacity: 1;
+  }
+
+  &.MuiButton-sizeSmall {
+    padding: 4px 10px !important;
+    font-size: 0.8125rem !important;
+    min-height: 32px !important;
+    min-width: 64px !important;
+    line-height: 1.75 !important;
+  }
+  &.MuiButton-sizeMedium {
+    padding: 6px 16px !important;
+    font-size: 0.9375rem !important;
+    min-height: 36px !important;
+    min-width: 80px !important;
+    line-height: 1.75 !important;
+  }
+  &.MuiButton-sizeLarge {
+    padding: 8px 22px !important;
+    font-size: 1.0625rem !important;
+    min-height: 44px !important;
+    min-width: 96px !important;
+    line-height: 1.75 !important;
+  }
+}
+
+.zerulean-outline {
+  background: transparent !important;
+  color: #00aaff !important;
+  border: 2px solid;
+  border-image: linear-gradient(90deg, #00aaff 0%, #19b8e6 100%);
+  border-image-slice: 1;
+  box-shadow: none;
+  text-transform: none !important;
+
+  &:hover,
+  &:focus {
+    background: transparent !important;
+    border-image: linear-gradient(90deg, #19b8e6 0%, #00aaff 100%);
+    border-image-slice: 1;
+  }
+
+  &.Mui-error,
+  &.MuiButton-colorError {
+    color: #d32f2f !important;
+    border: 2px solid;
+    border-image: linear-gradient(90deg, #d32f2f 0%, #b71c1c 100%);
+    border-image-slice: 1;
+
+    &:hover,
+    &:focus {
+      color: #b71c1c !important;
+      background: transparent !important;
+      border-image: linear-gradient(90deg, #b71c1c 0%, #d32f2f 100%);
+      border-image-slice: 1;
+    }
+  }
+
+  // Success (green)
+  &.Mui-success,
+  &.MuiButton-colorSuccess {
+    color: #2e7d32 !important;
+    border: 2px solid;
+    border-image: linear-gradient(90deg, #2e7d32 0%, #43a047 100%);
+    border-image-slice: 1;
+
+    &:hover,
+    &:focus {
+      color: #43a047 !important;
+      background: transparent !important;
+      border-image: linear-gradient(90deg, #43a047 0%, #2e7d32 100%);
+      border-image-slice: 1;
+    }
+  }
+
+  // Info (blue)
+  &.Mui-info,
+  &.MuiButton-colorInfo {
+    color: #0288d1 !important;
+    border: 2px solid;
+    border-image: linear-gradient(90deg, #0288d1 0%, #26c6da 100%);
+    border-image-slice: 1;
+
+    &:hover,
+    &:focus {
+      color: #26c6da !important;
+      background: transparent !important;
+      border-image: linear-gradient(90deg, #26c6da 0%, #0288d1 100%);
+      border-image-slice: 1;
+    }
+  }
+
+  // Warning (amber)
+  &.Mui-warning,
+  &.MuiButton-colorWarning {
+    color: #ed6c02 !important;
+    border: 2px solid;
+    border-image: linear-gradient(90deg, #ed6c02 0%, #ffa000 100%);
+    border-image-slice: 1;
+
+    &:hover,
+    &:focus {
+      color: #ffa000 !important;
+      background: transparent !important;
+      border-image: linear-gradient(90deg, #ffa000 0%, #ed6c02 100%);
+      border-image-slice: 1;
+    }
+  }
+
+  &.Mui-disabled {
+    background: transparent !important;
+    color: #bdbdbd !important;
+    border: 2px solid #bdbdbd !important;
+    box-shadow: none;
+    cursor: not-allowed;
+    opacity: 1;
+  }
+
+  &.MuiButton-sizeSmall {
+    padding: 4px 10px !important;
+    font-size: 0.8125rem !important;
+    min-height: 32px !important;
+    min-width: 64px !important;
+    line-height: 1.75 !important;
+  }
+  &.MuiButton-sizeMedium {
+    padding: 6px 16px !important;
+    font-size: 0.9375rem !important;
+    min-height: 36px !important;
+    min-width: 80px !important;
+    line-height: 1.75 !important;
+  }
+  &.MuiButton-sizeLarge {
+    padding: 8px 22px !important;
+    font-size: 1.0625rem !important;
+    min-height: 44px !important;
+    min-width: 96px !important;
+    line-height: 1.75 !important;
+  }
+}
+
+.zerulean-text {
+  background: transparent !important;
+  color: #00aaff !important;
+  text-transform: none !important;
+  border: none;
+  box-shadow: none;
+
+  // If MUI error color is present, override to red
+  &.Mui-error,
+  &.MuiButton-colorError {
+    color: #d32f2f !important;
+
+    &:hover,
+    &:focus {
+      color: #b71c1c !important;
+      background: rgba(211, 47, 47, 0.08) !important;
+    }
+  }
+
+  // Success (green)
+  &.Mui-success,
+  &.MuiButton-colorSuccess {
+    color: #2e7d32 !important;
+
+    &:hover,
+    &:focus {
+      color: #43a047 !important;
+      background: rgba(46, 125, 50, 0.08) !important;
+    }
+  }
+
+  // Info (blue)
+  &.Mui-info,
+  &.MuiButton-colorInfo {
+    color: #0288d1 !important;
+
+    &:hover,
+    &:focus {
+      color: #26c6da !important;
+      background: rgba(2, 136, 209, 0.08) !important;
+    }
+  }
+
+  // Warning (amber)
+  &.Mui-warning,
+  &.MuiButton-colorWarning {
+    color: #ed6c02 !important;
+
+    &:hover,
+    &:focus {
+      color: #ffa000 !important;
+      background: rgba(237, 108, 2, 0.08) !important;
+    }
+  }
+
+  &:hover,
+  &:focus {
+    background: rgba(0, 170, 255, 0.08) !important;
+    color: #19b8e6 !important;
+  }
+
+  &.Mui-disabled {
+    background: transparent !important;
+    color: #bdbdbd !important;
+    border: none;
+    box-shadow: none;
+    cursor: not-allowed;
+    opacity: 1;
+  }
+
+  &.MuiButton-sizeSmall {
+    padding: 4px 10px !important;
+    font-size: 0.8125rem !important;
+    min-height: 32px !important;
+    min-width: 64px !important;
+    line-height: 1.75 !important;
+  }
+  &.MuiButton-sizeMedium {
+    padding: 6px 16px !important;
+    font-size: 0.9375rem !important;
+    min-height: 36px !important;
+    min-width: 80px !important;
+    line-height: 1.75 !important;
+  }
+  &.MuiButton-sizeLarge {
+    padding: 8px 22px !important;
+    font-size: 1.0625rem !important;
+    min-height: 44px !important;
+    min-width: 96px !important;
+    line-height: 1.75 !important;
+  }
+}
