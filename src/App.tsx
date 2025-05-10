@@ -1,29 +1,22 @@
-import { useState } from 'react'
-import './App.css'
+import './App.scss'
 import logo from '/logo_plain-nobg.png'
 
-function App() {
-  const [count, setCount] = useState(0)
+const App = () => {
 
   return (
     <>
       <div>
-        <a href="https://vite.dev" target="_blank">
+        <a href="https://www.zerulean.ph" target="_blank">
           <img src={logo} className="logo" alt="Zerulean logo" />
         </a>
       </div>
-      <h1>Vite + React</h1>
+      <h1>Zerulean-UI</h1>
       <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
         <p>
-          Edit <code>src/App.tsx</code> and save to test HMR
+          Execute <code>npm run storybook</code> to start the Storybook
+          development server.
         </p>
       </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
     </>
   )
 }
