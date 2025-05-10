@@ -69,8 +69,8 @@
 
   // Disabled (gray)
   &.Mui-disabled {
-    background: linear-gradient(90deg, #e0e0e0 0%, #bdbdbd 100%) !important;
-    color: #757575 !important;
+    background: linear-gradient(90deg, #bdbdbd 0%, #9e9e9e 100%) !important;
+    color: #212121 !important; // much darker for contrast
     border: none;
     box-shadow: none;
     cursor: not-allowed;
@@ -102,9 +102,9 @@
 
 .zerulean-outline {
   background: transparent !important;
-  color: #00aaff !important;
+  color: #005073 !important; // much darker blue for contrast
   border: 2px solid;
-  border-image: linear-gradient(90deg, #00aaff 0%, #19b8e6 100%);
+  border-image: linear-gradient(90deg, #005073 0%, #19b8e6 100%);
   border-image-slice: 1;
   box-shadow: none;
   text-transform: none !important;
@@ -112,7 +112,7 @@
   &:hover,
   &:focus {
     background: transparent !important;
-    border-image: linear-gradient(90deg, #19b8e6 0%, #00aaff 100%);
+    border-image: linear-gradient(90deg, #19b8e6 0%, #005073 100%);
     border-image-slice: 1;
   }
 
@@ -185,7 +185,7 @@
 
   &.Mui-disabled {
     background: transparent !important;
-    color: #bdbdbd !important;
+    color: #212121 !important; // much darker for contrast
     border: 2px solid #bdbdbd !important;
     box-shadow: none;
     cursor: not-allowed;
@@ -217,7 +217,7 @@
 
 .zerulean-text {
   background: transparent !important;
-  color: #00aaff !important;
+  color: #005073 !important; // much darker blue for better contrast
   text-transform: none !important;
   border: none;
   box-shadow: none;
@@ -272,13 +272,13 @@
 
   &:hover,
   &:focus {
-    background: rgba(0, 170, 255, 0.08) !important;
+    background: rgba(0, 80, 115, 0.08) !important; // match new blue
     color: #19b8e6 !important;
   }
 
   &.Mui-disabled {
     background: transparent !important;
-    color: #bdbdbd !important;
+    color: #212121 !important; // much darker for contrast
     border: none;
     box-shadow: none;
     cursor: not-allowed;

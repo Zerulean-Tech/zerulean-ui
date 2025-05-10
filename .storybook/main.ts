@@ -9,6 +9,7 @@ const config: StorybookConfig = {
     "@storybook/addon-essentials",
     "@storybook/addon-onboarding",
     "@storybook/addon-docs",
+    "@storybook/addon-a11y",
     "@chromatic-com/storybook",
     "@storybook/experimental-addon-test"
   ],
