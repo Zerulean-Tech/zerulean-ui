@@ -1,0 +1,105 @@
+.zerulean-dashboard-layout {
+  position: relative;
+  display: grid;
+  grid-template-areas:
+    'header header'
+    'sidebar main'
+    'footer footer';
+  grid-template-columns: minmax(14rem, 16rem) minmax(0, 1fr);
+  grid-template-rows: auto minmax(0, 1fr) auto;
+  min-height: 100vh;
+  background: #f7fbfd;
+  color: #0f3b4f;
+}
+
+.zerulean-dashboard-layout__header {
+  grid-area: header;
+  border-bottom: 1px solid rgba(0, 80, 115, 0.12);
+  background: #fff !important;
+  color: #0f3b4f !important;
+}
+
+.zerulean-dashboard-layout__toolbar {
+  min-height: 4rem;
+  padding: 0 clamp(1rem, 3vw, 2rem);
+}
+
+.zerulean-dashboard-layout__logo {
+  display: flex;
+  align-items: center;
+}
+
+.zerulean-dashboard-layout__brand {
+  display: flex;
+  flex: 1;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.zerulean-dashboard-layout__notifications .MuiButton-root,
+.zerulean-dashboard-layout__user .MuiButton-root {
+  width: 2.5rem;
+  min-width: 2.5rem !important;
+  height: 2.5rem;
+  padding: 0 !important;
+  border-radius: 50%;
+}
+
+.zerulean-dashboard-layout__user .MuiAvatar-root {
+  width: 2.25rem;
+  height: 2.25rem;
+}
+
+.zerulean-dashboard-layout__sidebar {
+  position: relative !important;
+  z-index: 2;
+  grid-area: sidebar;
+  min-width: 0;
+  border-right: 1px solid rgba(0, 80, 115, 0.12);
+  background: #fff;
+}
+
+.zerulean-dashboard-layout__sidebar .MuiDrawer-paper {
+  position: relative;
+  z-index: 1;
+  width: auto;
+  border: 0;
+  background: transparent;
+}
+
+.zerulean-dashboard-layout__sidebar-content {
+  height: 100%;
+}
+
+.zerulean-dashboard-layout__main {
+  grid-area: main;
+  min-width: 0;
+  padding: clamp(1.25rem, 3vw, 2.5rem);
+}
+
+.zerulean-dashboard-layout__footer {
+  grid-area: footer;
+  border-top: 1px solid rgba(0, 80, 115, 0.12);
+  background: #fff;
+}
+
+@media (max-width: 48rem) {
+  .zerulean-dashboard-layout {
+    grid-template-areas:
+      'header'
+      'sidebar'
+      'main'
+      'footer';
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto minmax(0, 1fr) auto;
+  }
+
+  .zerulean-dashboard-layout__sidebar {
+    border-right: 0;
+    border-bottom: 1px solid rgba(0, 80, 115, 0.12);
+  }
+
+  .zerulean-dashboard-layout__sidebar .MuiDrawer-paper {
+    width: auto;
+  }
+}
