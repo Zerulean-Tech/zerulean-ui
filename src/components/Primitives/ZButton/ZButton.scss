@@ -1,14 +1,17 @@
 .zerulean-gradient {
   background: linear-gradient(90deg, #00aaff 0%, #19b8e6 100%);
-  color: #fff !important;
+  background-size: 200% 100%;
+  color: #005073 !important;
   border: none;
   box-shadow: 0 2px 8px 0 rgba(0, 119, 182, 0.15);
   transition: background 0.2s;
   text-transform: none !important;
 
   &:hover,
-  &:focus {
-    background: linear-gradient(90deg, #19b8e6 0%, #00aaff 100%);
+  &:focus-visible {
+    background-image: linear-gradient(90deg, #00aaff 0%, #19b8e6 50%, #00aaff 100%);
+    background-size: 200% 100%;
+    animation: zerulean-gradient-flow 0.3s ease-in-out infinite alternate;
   }
 
   // If MUI error color is present, override to red theme for contained variant
@@ -101,19 +104,45 @@
 }
 
 .zerulean-outline {
+  position: relative;
+  z-index: 0;
   background: transparent !important;
   color: #005073 !important; // much darker blue for contrast
-  border: 2px solid;
-  border-image: linear-gradient(90deg, #005073 0%, #19b8e6 100%);
-  border-image-slice: 1;
+  border: 2px solid transparent;
+  border-image: none;
   box-shadow: none;
   text-transform: none !important;
 
+  &::before {
+    position: absolute;
+    z-index: 0;
+    inset: -2px;
+    border-radius: inherit;
+    background: linear-gradient(90deg, #005073 0%, #19b8e6 50%, #005073 100%);
+    background-size: 200% 100%;
+    content: '';
+    pointer-events: none;
+    -webkit-mask: linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0);
+    -webkit-mask-composite: xor;
+    mask: linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0);
+    mask-composite: exclude;
+    padding: 2px;
+  }
+
+  & > * {
+    position: relative;
+    z-index: 1;
+  }
+
   &:hover,
-  &:focus {
-    background: transparent !important;
-    border-image: linear-gradient(90deg, #19b8e6 0%, #005073 100%);
-    border-image-slice: 1;
+  &:focus-visible {
+    &::before {
+      animation: zerulean-outline-gradient-flow 1s ease-in-out infinite alternate;
+    }
+  }
+
+  &.Mui-disabled::before {
+    display: none;
   }
 
   &.Mui-error,
@@ -212,6 +241,38 @@
     min-height: 44px !important;
     min-width: 96px !important;
     line-height: 1.75 !important;
+  }
+}
+
+@keyframes zerulean-outline-gradient-flow {
+  from {
+    background-position: 0% 0;
+  }
+
+  to {
+    background-position: 100% 0;
+  }
+}
+
+@keyframes zerulean-gradient-flow {
+  from {
+    background-position: 0% 0;
+  }
+
+  to {
+    background-position: 100% 0;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .zerulean-gradient:hover,
+  .zerulean-gradient:focus-visible {
+    animation: none;
+  }
+
+  .zerulean-outline:hover::before,
+  .zerulean-outline:focus-visible::before {
+    animation: none;
   }
 }
 

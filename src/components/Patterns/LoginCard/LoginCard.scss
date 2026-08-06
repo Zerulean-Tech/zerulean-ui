@@ -68,6 +68,16 @@
   box-shadow: none !important;
 }
 
+.zerulean-login-card__social-button {
+  border-style: solid !important;
+  border-color: currentColor !important;
+  border-image: none !important;
+}
+
+.zerulean-login-card__social-button::before {
+  display: none;
+}
+
 .zerulean-login-card__social-button--google {
   color: #db4437 !important;
   border-color: #db4437 !important;
