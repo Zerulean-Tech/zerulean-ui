@@ -1,6 +1,6 @@
 import React from 'react';
 import MUIButton, { type ButtonProps } from '@mui/material/Button';
-import './Button.scss';
+import './ZButton.scss';
 
 /**
  * ZButton - A reusable button component with cerulean blue gradient branding.
