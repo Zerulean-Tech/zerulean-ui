@@ -1,6 +1,6 @@
 import { renderToStaticMarkup } from 'react-dom/server';
 import { describe, expect, it } from 'vitest';
-import { ZButton } from '../ZButton/ZButton';
+import { ZButton } from '../../Primitives/ZButton/ZButton';
 import { Card } from './Card';
 
 describe('Card', () => {

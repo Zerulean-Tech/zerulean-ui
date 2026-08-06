@@ -52,7 +52,12 @@ When adding a new component:
 3. Keep the API consistent and accessible.
 4. Document usage when behavior or props change.
 
-Current components include a reusable ZButton and a new Card component for content blocks, feature panels, and rich summaries.
+Components are organized into four groups:
+
+- `Primitives`: foundational controls such as `ZButton` and `Typography`.
+- `Components`: composed reusable pieces such as `Card` and `ZTable`.
+- `Patterns`: specific UI compositions such as `LoginCard` and `AvatarCard`.
+- `Templates`: page-level compositions such as `DashboardPage`.
 
 ---
 

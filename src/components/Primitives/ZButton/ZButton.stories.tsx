@@ -6,7 +6,7 @@ import type { Meta, StoryObj } from '@storybook/react';
 import { ZButton } from './ZButton';
 
 const meta: Meta<typeof ZButton> = {
-  title: 'Components/ZButton',
+  title: 'Primitives/ZButton',
   component: ZButton,
   args: {
     children: 'Button',

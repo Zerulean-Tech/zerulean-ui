@@ -1,5 +1,5 @@
 import type { Meta, StoryObj } from '@storybook/react';
-import { ZButton } from '../ZButton/ZButton';
+import { ZButton } from '../../Primitives/ZButton/ZButton';
 import { Card } from './Card';
 
 const meta: Meta<typeof Card> = {

@@ -1,3 +1,2 @@
-export * from './ZButton';
-export * from './Card';
-export * from './Typography';
+export * from './Primitives';
+export * from './Components';
