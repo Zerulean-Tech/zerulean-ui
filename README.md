@@ -52,6 +52,8 @@ When adding a new component:
 3. Keep the API consistent and accessible.
 4. Document usage when behavior or props change.
 
+Current components include a reusable Button and a new Card component for content blocks, feature panels, and rich summaries.
+
 ---
 
 For more details, see the configuration files in the project root.
