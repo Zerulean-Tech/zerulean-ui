@@ -1,0 +1,111 @@
+.zerulean-login-card {
+  width: min(100%, 28rem);
+  box-sizing: border-box;
+  margin: 0 auto;
+  padding: clamp(1.5rem, 5vw, 2rem);
+  border: 1px solid rgba(0, 80, 115, 0.16);
+  border-radius: 16px;
+  box-shadow: 0 8px 24px rgba(0, 80, 115, 0.08);
+}
+
+.zerulean-login-card__header {
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.zerulean-login-card__title {
+  margin: 0;
+  color: #0f3b4f;
+  font-size: 1.5rem;
+  line-height: 1.25;
+}
+
+.zerulean-login-card__subtitle {
+  margin: 0.5rem 0 0;
+  color: #5f6b75;
+}
+
+.zerulean-login-card__form,
+.zerulean-login-card__social-list {
+  display: grid;
+  gap: 1rem;
+}
+
+.zerulean-login-card__forgot-password {
+  align-self: end;
+  margin-top: -0.5rem !important;
+}
+
+.zerulean-login-card__social {
+  margin-top: 0.75rem;
+}
+
+.zerulean-login-card__divider {
+  margin: 0 0 1rem;
+  padding: 0.25rem 0 0.75rem;
+  color: #5f6b75;
+  font-size: 0.8rem;
+}
+
+.zerulean-login-card__social-list {
+  gap: 0.5rem;
+}
+
+.zerulean-login-card__social-list--linear {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.75rem;
+}
+
+.zerulean-login-card__social-list--linear .zerulean-login-card__social-button {
+  flex: 0 0 2.75rem;
+  width: 2.75rem;
+  min-width: 2.75rem !important;
+  padding: 0.375rem !important;
+  border: none !important;
+  color: #fff !important;
+  box-shadow: none !important;
+}
+
+.zerulean-login-card__social-button--google {
+  color: #db4437 !important;
+  border-color: #db4437 !important;
+}
+
+.zerulean-login-card__social-list--linear .zerulean-login-card__social-button--google {
+  background: #db4437 !important;
+}
+
+.zerulean-login-card__social-button--facebook {
+  color: #1877f2 !important;
+  border-color: #1877f2 !important;
+}
+
+.zerulean-login-card__social-list--linear .zerulean-login-card__social-button--facebook {
+  background: #1877f2 !important;
+}
+
+.zerulean-login-card__social-button--apple {
+  color: #111 !important;
+  border-color: #111 !important;
+}
+
+.zerulean-login-card__social-list--linear .zerulean-login-card__social-button--apple {
+  background: #111 !important;
+}
+
+.zerulean-login-card__social-button--github {
+  color: #24292f !important;
+  border-color: #24292f !important;
+}
+
+.zerulean-login-card__create-account {
+  margin-top: 1.5rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid rgba(0, 80, 115, 0.12);
+}
+
+.zerulean-login-card__social-list--linear .zerulean-login-card__social-button--github {
+  background: #24292f !important;
+}
