@@ -1,6 +1,6 @@
 import { renderToStaticMarkup } from 'react-dom/server';
 import { describe, expect, it } from 'vitest';
-import { Button } from '../Button/Button';
+import { ZButton } from '../Button/Button';
 import { Card } from './Card';
 
 describe('Card', () => {
@@ -9,7 +9,7 @@ describe('Card', () => {
       <Card
         title="Card title"
         subtitle="Card subtitle"
-        actions={<Button>Learn more</Button>}
+        actions={<ZButton>Learn more</ZButton>}
       >
         <p>Card content</p>
       </Card>

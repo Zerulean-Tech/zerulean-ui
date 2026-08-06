@@ -3,11 +3,11 @@ import CloudUploadIcon from '@mui/icons-material/CloudUpload';
 import CircularProgress from '@mui/material/CircularProgress';
 import { styled } from '@mui/material/styles';
 import type { Meta, StoryObj } from '@storybook/react';
-import { Button } from './Button';
+import { ZButton } from './Button';
 
-const meta: Meta<typeof Button> = {
-  title: 'Components/Button',
-  component: Button,
+const meta: Meta<typeof ZButton> = {
+  title: 'Components/ZButton',
+  component: ZButton,
   args: {
     children: 'Button',
     variant: 'contained',
@@ -44,7 +44,7 @@ const meta: Meta<typeof Button> = {
 };
 
 export default meta;
-type Story = StoryObj<typeof Button>;
+type Story = StoryObj<typeof ZButton>;
 
 const VisuallyHiddenInput = styled('input')({
   clip: 'rect(0 0 0 0)',
@@ -123,15 +123,15 @@ export const onClick: Story = {
 export const StartEndIcon: Story = {
   render: (args) => (
     <div style={{ display: 'flex', gap: 16 }}>
-      <Button {...args} startIcon={<Add />}>
+      <ZButton {...args} startIcon={<Add />}>
         Start Icon
-      </Button>
-      <Button {...args} endIcon={<ArrowForward />}>
+      </ZButton>
+      <ZButton {...args} endIcon={<ArrowForward />}>
         End Icon
-      </Button>
-      <Button {...args} startIcon={<Add />} endIcon={<ArrowForward />}>
+      </ZButton>
+      <ZButton {...args} startIcon={<Add />} endIcon={<ArrowForward />}>
         Both Icons
-      </Button>
+      </ZButton>
     </div>
   ),
   args: {
@@ -141,7 +141,7 @@ export const StartEndIcon: Story = {
 
 export const FileUpload: Story = {
   render: (args) => (
-    <Button
+    <ZButton
       {...args}
       component="label"
       role={undefined}
@@ -157,7 +157,7 @@ export const FileUpload: Story = {
           console.log(event.target.files)
         }
       />
-    </Button>
+    </ZButton>
   ),
   args: {
     children: undefined,
@@ -167,16 +167,16 @@ export const FileUpload: Story = {
 export const Loading: Story = {
   render: (args) => (
     <div style={{ display: 'flex', gap: 16, alignItems: 'center' }}>
-      <Button {...args} disabled startIcon={<CircularProgress size={20} color="inherit" />}>
+      <ZButton {...args} disabled startIcon={<CircularProgress size={20} color="inherit" />}>
         Loading
-      </Button>
-      <Button {...args} variant="outlined" disabled endIcon={<CircularProgress size={20} color="inherit" />}>
+      </ZButton>
+      <ZButton {...args} variant="outlined" disabled endIcon={<CircularProgress size={20} color="inherit" />}>
         Loading Outlined
-      </Button>
-      <Button {...args} variant="text" disabled>
+      </ZButton>
+      <ZButton {...args} variant="text" disabled>
         <CircularProgress size={20} color="inherit" style={{ marginRight: 8 }} />
         Loading Text
-      </Button>
+      </ZButton>
     </div>
   ),
   args: {

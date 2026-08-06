@@ -3,11 +3,11 @@ import MUIButton, { type ButtonProps } from '@mui/material/Button';
 import './Button.scss';
 
 /**
- * Button - A reusable button component with cerulean blue gradient branding.
+ * ZButton - A reusable button component with cerulean blue gradient branding.
  *
  * @param props - MUI ButtonProps plus children.
  */
-export const Button: React.FC<ButtonProps> = ({
+export const ZButton: React.FC<ButtonProps> = ({
   className,
   variant,
   ...props
@@ -31,4 +31,4 @@ export const Button: React.FC<ButtonProps> = ({
   );
 };
 
-export default Button;
+export default ZButton;

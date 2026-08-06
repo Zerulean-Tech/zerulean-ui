@@ -1,5 +1,5 @@
 import type { Meta, StoryObj } from '@storybook/react';
-import { Button } from '../Button/Button';
+import { ZButton } from '../Button/Button';
 import { Card } from './Card';
 
 const meta: Meta<typeof Card> = {
@@ -11,8 +11,8 @@ const meta: Meta<typeof Card> = {
     content: 'Use this card for featured content, highlights, or supporting information.',
     actions: (
       <>
-        <Button variant="outlined">Learn more</Button>
-        <Button>Get started</Button>
+        <ZButton variant="outlined">Learn more</ZButton>
+        <ZButton>Get started</ZButton>
       </>
     ),
   },
